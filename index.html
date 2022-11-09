@@ -3,66 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <title>sample.profile</title>
+    <meta name="description" content="ブランドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
+    <title>WCB Cafe</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="imamg/png" href="images/favicon.png">
 </head>
 <body>
-    <header id="header" class="wrapper">
-        <h1 class="site-title">
-            <a href="index.html">
-               <img src="img/logo.svg" alt="profile">
-            </a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#bicycle">Bicycle</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div id="mainvisual">
-            <img src="img/mainvisual.jpg" alt="テキスト">
+    <div id="home" class="big-bg">
+        <header class="page-header wrapper">
+            <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCBカフェホーム"></a></h1>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="home-content wrapper">
+            <h2 class="page-title">We'll Make Your Day</h2>
+            <p>おしゃれなカフェで癒されてみませんか？無添加の食材で体の中からリフレッシュ。</p>
+            <a class="button" href="menu.html">メニューを見る</a>
         </div>
-
-        <section id="about" class="wrapper">
-            <h2 class="section-title">About</h2>
-            <div class="content">
-                <img src="img/ky logo.jpeg" alt="テキスト">
-                <div class="text">
-                    <h3 class="contnt-title">YOSHIKI</h3>
-                    <p>プロフィールデモサイトです</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="bicycle" class="wrapper">
-            <h2 class="section-title">Bicycle</h2>
-            <ul>
-                <li>
-                    <img src="https://code-step.com/demo/html/profile/img/bicycle1.jpg" alt="テキスト">
-                    <h3 class="content-title">タイトル１</h3>
-                    <p>テキスト</p>
-                </li>
-                <li>
-                    <img src="https://code-step.com/demo/html/profile/img/bicycle2.jpg" alt="テキスト">
-                    <h3 class="content-title">タイトル2</h3>
-                    <p>テキスト</p>
-                </li>
-                <li>
-                    <img src="https://code-step.com/demo/html/profile/img/bicycle3.jpg" alt="テキスト">
-                    <h3 class="content-title">タイトル3</h3>
-                    <p>テキスト</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <footer id="footer">
-        <p>&copy; 2022 Profile</p>
-    </footer>
+    </div>
 </body>
 </html>

@@ -1,149 +1,98 @@
 @charset "UTF-8";
 
 html {
-    font-size: 100% ;
+    font-size: 100%;
 }
 
 body {
-    color: #383e45;
-    font-size: 0.9rem;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
 }
 
 a {
     text-decoration: none;
 }
 
-img {
+img{
     max-width: 100%;
 }
 
-li{
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
     list-style: none;
 }
+
+.main-nav li {
+    margin-left: 36px;
+}
+
+.main-nav a {
+    color: #432;
+}
+
+.main-nav a :hover {
+    color: #0bd;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .wrapper {
-    max-width: 960px;
-    margin: 0 auto 100px auto;
-    padding: 0 4% ;
-    text-align: center;
-}
-.site-title {
-    width: 120px;
-    line-height: 1px;
-    padding: 10px 0 ;
-    text-align: center;
-}
-.site-title a {
-    display: block;
-}
-
-.section-title {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 60px;
-    border-bottom: solid 1px #383e45;
-}
-
-.content-title {
-    font-size: 1rem;
-    margin: 10px 0 ;
-}
-
-/*header*/
-
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 1100px;
     margin: 0 auto;
-}
-#header ul{
-    display: flex;
-    padding: 10px 0 ;
+    padding: 0 4%;
 }
 
-#header li {
-    margin-left: 30px;
-}
-
-#header li a {
-    color: #24292e;
-}
-
-#header li a :hover {
-    opacity: 0.7;
-}
-
-/*mainvisual*/
-
-#mainvisual {
-    margin-bottom: 80px;
-}
-
-#mainvisual img {
-    width: 100% ;
-    max-width: 1920px;
-    height: 600px;
-    object-fit: cover;
-
-}
-
-/*About*/
-
-#about .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 30px;
-}
-
-#about .text {
-    text-align: left;
-}
-
-/*Bicycle*/
-
-#bicycle ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-#bicycle li {
-    width: 32%;
-}
-
-/*footer*/
-
-#footer {
-    font-size: 0.5rem;
-    padding: 10px 0 ;
+.home-content {
     text-align: center;
+    margin-top: 10%;
 }
 
-@media  screen and (max-width: 600px)  {
-    #mainvisual img {
-        height: calc(100vh - 60px);
-    }
+.home-content p {
+    font-size: 1.125rem ;
+    margin: 10px 0 42px;
+}
 
-    #about .content{
-        flex-direction: column;
-    }
+.page-title {
+    font-size: 5rem;
+    font-family: 'philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 
-    #about img {
-        margin-right: 0;
-    }
+.button {
+    font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
 
-    #bicycle ul {
-        flex-direction: column;
-    }
-    #bicycle li {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+.button:hover {
+    background: #0090aa;
+}
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+
+#home {
+    background-image: url(../images/main-bg.jpg);
+    min-height: 100vh;
+
+}
+#home .page-title {
+    text-transform: none;
 }
