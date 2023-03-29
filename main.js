@@ -1,9 +1,16 @@
-//徐々に色が変わる
+//上から下にいき真ん中に戻る
+
 $(function(){
-    $('#typo').on('click',function(){
+    $('#typo .inner')
+    .css('top','-100px')
+    .on('click',function(){
         $('#typo .inner').animate({
-            color:'#ebd000'
+            top:'100px'
+        },
+        1500,
+        function(){
+            $('#typo .inner').animate({top:'0px'},500);
         }
-        ,1500);
+        );
     });
 });
